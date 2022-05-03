@@ -1,4 +1,4 @@
-# grasp-lift-eeg-detection
+# Grasp-and-Lift-EEG-detection
 This is project for fulfilment of the course Brain Computer Interfaces and Application <br />
 National Tsing Hua University, Taiwan, R.O.C, Spring Semester 2021. <br /> <br />
 
