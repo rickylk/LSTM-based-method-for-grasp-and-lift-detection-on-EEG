@@ -7,7 +7,8 @@
 Back into 1924, the first EEG data was reord by Hans Berger, a German psychiatrist.<br />
 It has become the beginning of the development of many other researches since then. <br />
 The first EEG record display as below;
-![](imgs/The-first-EEG-record.png)
+![](../The-first-EEG-record.png)
+
 
 
 The first EEG was recorded by Hans Berger, a German psychiatrist in 1924
