@@ -5,11 +5,13 @@ National Tsing Hua University, Taiwan, R.O.C, Spring Semester 2021. <br /> <br /
 ### Project objective:
 1. To find the significant features that can improve the model performance.
 2. To implement the classification model to accurately classify the different hand movements by using EEG signals.
-3. To find the high heavyweight channels, cancel other channels to increase the efficiency of the model.
+3. To find the high heavyweight channels, cancel other channels to increase the efficiency of the model.<br />
+For the previous works on grasp and list detection using EEG data can be found on Related work folder <br />
+(https://github.com/rickylk/grasp-lift-eeg-detection/tree/main/Related%20works)
  
 
 ### Dataset:
-We use, "Grasp-and-Lift EEG Detection (GAL) dataset" (Luciw, Jarocka & Edin, 2014). <br />
+We use 'Grasp-and-Lift EEG Detection (GAL) dataset' (Luciw, Jarocka & Edin, 2014) as our dataset. <br />
 The dataset is available on Kaggle and was used as a competition in 2015. <br />
 The brief information about the dataset is shown below; <br />
   - 3,960 trials in total.
