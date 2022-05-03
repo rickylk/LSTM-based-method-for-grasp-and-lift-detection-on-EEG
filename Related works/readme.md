@@ -4,7 +4,8 @@
  However, the task is still challenging due to the complexion of the EEG data that contain both brain signal and all body movement. <br />
 
 ### First EEG record. 
-Back into 1924, the first EEG data was reord by Hans Berger, a German psychiatrist and it was the beginning of many other researches after that. <br />
+Back into 1924, the first EEG data was reord by Hans Berger, a German psychiatrist.<br />
+It has become the beginning of the development of many other researches since then. <br />
 The first EEG record display as below;
 ![](imgs/The-first-EEG-record.png)
 
