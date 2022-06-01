@@ -33,15 +33,15 @@ The brief information about the dataset is shown below; <br />
           - different surface (sandpaper, suede, silk surface).
           - different action e.g. enforcing change in fingertip, grasp with thumb and index finger and  lift and hold .
 
-To download the dataset >> https://www.kaggle.com/competitions/grasp-and-lift-eeg-detection/data <br />
-For more information about the dataset, please refer to >> https://www.nature.com/articles/sdata201447 <br />
+Please find the dataset in folder 'data' or [click]( https://www.kaggle.com/competitions/grasp-and-lift-eeg-detection/data) <br />
+For more information about the dataset, please refer to [click](https://www.nature.com/articles/sdata201447) <br />
 
 ### <s> Methodology:</s> 
 
 ###  <s>Result:</s>
 
-
-
+### Acknowledgements:
+- Luciw, M. D., Jarocka, E., & Edin, B. B. (2014). Multi-channel EEG recordings during 3,936 grasp and lift trials with varying weight and friction. Scientific data, 1(1), 1-11. ([PDF](https://www.nature.com/articles/sdata201447))
 
 
 ----------------------------------------------------------------------------
