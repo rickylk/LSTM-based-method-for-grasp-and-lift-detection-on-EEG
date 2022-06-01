@@ -1,13 +1,23 @@
-# Grasp-and-Lift-Detection-on-EEG
+![capture_001_02062022_01551122](https://user-images.githubusercontent.com/21188544/171472880-b9909c94-5293-477d-9443-7f5620cfcaa2.jpg)
+
+# Final Project
+## Grasp-and-Lift-Detection-on-EEG
 This is project for fulfilment of the course Brain Computer Interfaces and Application. <br />
 National Tsing Hua University, Taiwan, R.O.C, Spring Semester 2021. <br /> <br />
+
+### Introduction
+After the first EEG data was record in 1924 by Hans Berger, a German psychiatrist. There are many researches developed based on EEG data, since EEG data is rich in infortaion and containing all body activities in term of signal. BCI is also one popular research domain that mainly developed based on EEG data with an intention to help people to be able to directly control the computer from the brain. Especially, for people with disabilities, BCI helps to enhance their life quality to live more independently and more convenient.
+
+
+In this project, we implement and develop the machine learning approach to classify the different hand movements using EEG data.<br />
+This challenge was a research prediction competition on Kaggle in 2015. <br />
+Please find more information about the competition [here ](https://www.kaggle.com/competitions/grasp-and-lift-eeg-detection/data)
+
 
 ### Project objective:
 1. To find the significant features that can improve the model performance.
 2. To implement the classification model to accurately classify the different hand movements by using EEG signals.
 3. To find the high heavyweight channels, cancel other channels to increase the efficiency of the model.<br />
-For the previous works on grasp and list detection using EEG data can be found on Related work folder <br />
-(https://github.com/rickylk/grasp-lift-eeg-detection/tree/main/Related%20works)
  
 
 ### Dataset:
@@ -35,7 +45,7 @@ For more information about the dataset, please refer to >> https://www.nature.co
 
 
 ----------------------------------------------------------------------------
-#### Team member:
+#### Author.
 Pattamon Rattanapan  ID 108065436 <br />
 林孟萱                ID 110065509  (https://github.com/Hsuan1026)<br />
 吳余山                ID 110033408  (https://github.com/ngusan)<br />
