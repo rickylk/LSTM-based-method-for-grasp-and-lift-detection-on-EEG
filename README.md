@@ -46,9 +46,7 @@ For more information about the dataset, please refer to [click](https://www.natu
 
 ----------------------------------------------------------------------------
 #### Author.
-Pattamon Rattanapan  ID 108065436 <br />
-林孟萱                ID 110065509  (https://github.com/Hsuan1026)<br />
-吳余山                ID 110033408  (https://github.com/ngusan)<br />
+Pattamon Rattanapan  ID 108065436, 林孟萱 ID 110065509, 吳余山 ID 110033408  
 
 
 
