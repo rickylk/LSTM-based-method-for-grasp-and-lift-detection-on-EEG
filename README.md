@@ -22,16 +22,18 @@ Please find more information about the competition [here ](https://www.kaggle.co
 
 ### Dataset:
 We use 'Grasp-and-Lift EEG Detection (GAL) dataset' (Luciw, Jarocka & Edin, 2014) as our dataset. <br />
-The dataset is available on Kaggle and was used for a competition in 2015. <br />
-This dataset contains both EEG data, EMG data and 3D of both hand and object position. However, in this study, we will focus on EEG data only.<br />
+The paper was published in 2014 and the dataset was used for a prediction competition on Kaggle in 2015. <br />
+Apart from the competition, this data is also used for many studies for example to compare the performance of algorithm to detect hand movement from EEG data in 2016 (Kristóf Várszegi, 2019), to improve the classification method on EEG data using feature priority based analysis and CNN in 2019 (Li et al., 2019)
+This dataset not contains only EEG data but also includes EMG data and 3D of both hand and object position. 
+However, in this study, we will focus on EEG data only.<br />
 The brief information of the dataset is shown below; <br />
   - 12 participants, 10 series of trial subjects and ~ 30 trials on each series, 3,960 trials in total.<br />
-  - EEG sensor ActiCap 32 channals
-  - 6 labels: Hand Start, First Digit Touch, Both Start Load Phase, Lift Off, Replace, Both Released
+  - 6 labels: Hand Start, First Digit Touch, Both Start Load Phase, Lift Off, Replace, Both Released.
   - Object used and action:<br />
         - different weight (165, 330, 660 g).<br />
         - different surface (sandpaper, suede, silk surface).<br />
         - different action e.g. enforcing change in fingertip, grasp with thumb and index finger and  lift and hold.<br />
+For data collection, this dataset is recorded using EEG sensor ActiCap 32 channals in conjunction with BrainAmp EEG signal amplifier. After preprocessing, the ready to use data sample rate is 500 Hz.
         
 ![capture_001_02062022_215652](https://user-images.githubusercontent.com/21188544/171646348-9004f7f1-605c-45a2-a788-f5fa29c5d08f.jpg)
 Figure1 displays the EEG map of ActiCap and the location of each channel. For our task, we are going to classify the different hand movement which is controlled by primory motor cortex and primary sensory cortex, figure 2. So, we will focus on using the data which location is on these part of the brain which are: T7, C5, C3, C1, Cz, C2, C4, C8, T8, TP9, TP7, CP5, CP1, CPz, CP2, CP4, Cp6, TP8 and TP10.
@@ -47,7 +49,8 @@ For more information about the dataset collection methodology, please refer to [
 
 ### Acknowledgements:
 - Luciw, M. D., Jarocka, E., & Edin, B. B. (2014). Multi-channel EEG recordings during 3,936 grasp and lift trials with varying weight and friction. Scientific data, 1(1), 1-11. ([PDF](https://www.nature.com/articles/sdata201447))
-
+- Várszegi, K. (2016, October). Comparison of algorithms for detecting hand movement from EEG signals. In 2016 IEEE International Conference on Systems, Man, and Cybernetics (SMC) (pp. 002208-002213). IEEE.([PDF](https://ieeexplore.ieee.org/abstract/document/7844566))
+- Li, S., & Feng, H. (2019, July). EEG signal classification method based on feature priority analysis and CNN. In 2019 International Conference on Communications, Information System and Computer Engineering (CISCE) (pp. 403-406). IEEE. ([PDF](https://ieeexplore.ieee.org/abstract/document/8805870))
 
 ----------------------------------------------------------------------------
 #### Author.
