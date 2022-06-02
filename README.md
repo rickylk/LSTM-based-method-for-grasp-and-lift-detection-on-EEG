@@ -33,9 +33,11 @@ The brief information of the dataset is shown below; <br />
         - different surface (sandpaper, suede, silk surface).<br />
         - different action e.g. enforcing change in fingertip, grasp with thumb and index finger and  lift and hold.<br />
         
+![capture_001_02062022_215652](https://user-images.githubusercontent.com/21188544/171646348-9004f7f1-605c-45a2-a788-f5fa29c5d08f.jpg)
+Figure1 displays the EEG map of ActiCap and the location of each channel. For our task, we are going to classify the different hand movement which is controlled by primory motor cortex and primary sensory cortex, figure 2. So, we will focus on using the data which location is on these part of the brain which are: T7, C5, C3, C1, Cz, C2, C4, C8, T8, TP9, TP7, CP5, CP1, CPz, CP2, CP4, Cp6, TP8 and TP10.
 
-Please find the dataset in [folder data](https://github.com/rickylk/LSTM-based-method-for-grasp-and-lift-detection-on-EEG/tree/main/data) or [click]( https://www.kaggle.com/competitions/grasp-and-lift-eeg-detection/data) <br />
-For more information about the dataset collection, please refer to [click](https://www.nature.com/articles/sdata201447) <br />
+To download the file, please visit [folder data](https://github.com/rickylk/LSTM-based-method-for-grasp-and-lift-detection-on-EEG/tree/main/data) or [click]( https://www.kaggle.com/competitions/grasp-and-lift-eeg-detection/data) <br />
+For more information about the dataset collection methodology, please refer to [click](https://www.nature.com/articles/sdata201447) <br />
 
 ### <s> Methodology:</s> 
 
