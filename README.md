@@ -23,10 +23,13 @@ Please find more information about the competition [here ](https://www.kaggle.co
 ### Dataset:
 We use 'Grasp-and-Lift EEG Detection (GAL) dataset' (Luciw, Jarocka & Edin, 2014) as our dataset. <br />
 The paper was published in 2014 and the dataset was used for a prediction competition on Kaggle in 2015. <br />
-Apart from the competition, this data is also used for many studies for example to compare the performance of algorithm to detect hand movement from EEG data in 2016 (Kristóf Várszegi, 2019), to improve the classification method on EEG data using feature priority based analysis and CNN in 2019 (Li et al., 2019)
-This dataset not contains only EEG data but also includes EMG data and 3D of both hand and object position. 
-However, in this study, we will focus on EEG data only.<br />
-The brief information of the dataset is shown below; <br />
+
+Apart from the competition, this data is also used for many studies for example to compare the performance of algorithm  <br />
+to detect hand movement from EEG data in 2016 (Kristóf Várszegi, 2019), to improve the classification method on EEG data using  <br />
+feature priority based analysis and CNN in 2019 (Li et al., 2019)
+
+This dataset not contains only EEG data but also includes EMG data and 3D of both hand and object position.  <br />
+However, in this study, we will focus on EEG data only. The brief information of the dataset is shown below; <br />
   - 12 participants, 10 series of trial subjects and ~ 30 trials on each series, 3,960 trials in total.<br />
   - 6 labels: Hand Start, First Digit Touch, Both Start Load Phase, Lift Off, Replace, Both Released.
   - Object used and action:<br />
