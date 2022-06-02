@@ -6,8 +6,8 @@ This is project for fulfilment of the course Brain Computer Interfaces and Appli
 National Tsing Hua University, Taiwan, R.O.C, Spring Semester 2021. <br /> <br />
 
 ### Introduction
-After the first EEG data was record in 1924 by Hans Berger, a German psychiatrist. There are many researches developed based on EEG data, since EEG data is rich in infortaion and containing all body activities in term of signal. BCI is also one popular research domain that mainly developed based on EEG data with an intention to help people to be able to directly control the computer from the brain. Especially, for people with disabilities, BCI helps to enhance their life quality to live more independently and more convenient.
-
+![capture_001_02062022_030150](https://user-images.githubusercontent.com/21188544/171482094-eae8c6ea-ebeb-4df1-8442-c8b805d3283a.jpg)
+After the first EEG data was record in 1924 by Hans Berger, a German psychiatrist. There are many researches developed based on EEG data, since EEG data is rich in infortaion and containing all body activities in term of signal. BCI is also one popular research domain that mainly developed based on EEG data with an intention to help people to be able to directly control the computer from the brain. Especially, for people with disabilities, BCI helps to enhance their life quality to live more independently and more convenient.<br />
 
 In this project, we implement and develop the machine learning approach to classify the different hand movements using EEG data.<br />
 This challenge was a research prediction competition on Kaggle in 2015. <br />
@@ -33,7 +33,7 @@ The brief information about the dataset is shown below; <br />
           - different surface (sandpaper, suede, silk surface).
           - different action e.g. enforcing change in fingertip, grasp with thumb and index finger and  lift and hold .
 
-Please find the dataset in folder 'data' or [click]( https://www.kaggle.com/competitions/grasp-and-lift-eeg-detection/data) <br />
+Please find the dataset in [folder data](https://github.com/rickylk/LSTM-based-method-for-grasp-and-lift-detection-on-EEG/tree/main/data) or [click]( https://www.kaggle.com/competitions/grasp-and-lift-eeg-detection/data) <br />
 For more information about the dataset, please refer to [click](https://www.nature.com/articles/sdata201447) <br />
 
 ### <s> Methodology:</s> 
