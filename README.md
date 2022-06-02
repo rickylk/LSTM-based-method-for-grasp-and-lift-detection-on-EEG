@@ -19,26 +19,27 @@ Please find more information about the competition [here ](https://www.kaggle.co
 2. To implement the classification model to accurately classify the different hand movements by using EEG signals.
 3. To find the high heavyweight channels, cancel other channels to increase the efficiency of the model.<br />
  
-
 ### Dataset:
 We use 'Grasp-and-Lift EEG Detection (GAL) dataset' (Luciw, Jarocka & Edin, 2014) as our dataset. <br />
-The dataset is available on Kaggle and was used as a competition in 2015. <br />
-The brief information about the dataset is shown below; <br />
-  - 3,960 trials in total.
-  - 32 channals EEG record.
-  - 12 participants.
-  - 10 series of trial subjects and ~ 30 trials on each series.
-      - Object used and action:
+The dataset is available on Kaggle and was used for a prediction competition in 2015. <br />
+This dataset records both EEG data, EMG data and 3D position of hands and object. However, we will focus on EEG data only for this study. <br /> 
+The brief information of the dataset is shown below; <br />
+  - Using EEG sensor ActiCap 32 channals 
+  - 12 participants, 10 series of trial subjects, approximately 30 trials on each series, in total 3,960 trials are recorded.
+  - Object used and action:
           - different weight (165, 330, 660 g).
           - different surface (sandpaper, suede, silk surface).
           - different action e.g. enforcing change in fingertip, grasp with thumb and index finger and  lift and hold .
-
+  - 6 labels: hand start, first digit touch, both start load phase, lift off, replace and both released.
+  - 
 Please find the dataset in [folder data](https://github.com/rickylk/LSTM-based-method-for-grasp-and-lift-detection-on-EEG/tree/main/data) or [click]( https://www.kaggle.com/competitions/grasp-and-lift-eeg-detection/data) <br />
-For more information about the dataset, please refer to [click](https://www.nature.com/articles/sdata201447) <br />
+For more information on how the data was recored, please refer to [click](https://www.nature.com/articles/sdata201447) <br />
 
 ### <s> Methodology:</s> 
+Thi
 
 ###  <s>Result:</s>
+###  <s>Demo:</s>
 
 ### Acknowledgements:
 - Luciw, M. D., Jarocka, E., & Edin, B. B. (2014). Multi-channel EEG recordings during 3,936 grasp and lift trials with varying weight and friction. Scientific data, 1(1), 1-11. ([PDF](https://www.nature.com/articles/sdata201447))
