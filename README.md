@@ -55,7 +55,7 @@ For more information about the dataset collection methodology, please refer to [
 - Testing data <br />
 Since, the original dataset does not provide the ground truth label for testing data. <br />
 In our experiment, we split the training data into training and validation set, then use the validation data as our testing set. <br />
-The proportion to split is 75:25 for training and validation. 
+The proportion to split is 75:25 for training and validation. <br />
 - 
 #### Classification Model
 - Convolutional Neural Networks (CNN) <br />
