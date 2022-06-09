@@ -44,11 +44,32 @@ Figure1 displays the EEG map of ActiCap and the location of each channel. For ou
 To download the file, please visit [folder data](https://github.com/rickylk/LSTM-based-method-for-grasp-and-lift-detection-on-EEG/tree/main/data) or [click]( https://www.kaggle.com/competitions/grasp-and-lift-eeg-detection/data) <br />
 For more information about the dataset collection methodology, please refer to [click](https://www.nature.com/articles/sdata201447) <br />
 
-### <s> Methodology:</s> 
+### Methodology: 
 
-###  <s>Result:</s>
+#### Data Preprocessing
+- Preprocessing
+        -         
+        - 
+        - 
+        - 
+- Testing data <br />
+Since, the original dataset does not provide the ground truth label for testing data. <br />
+In our experiment, we split the training data into training and validation set, then use the validation data as our testing set. <br />
+The proportion to split is 75:25 for training and validation. 
+- 
+#### Classification Model
+- Convolutional Neural Networks (CNN) <br />
 
-###  <s>Demo:</s>
+- Long short-term memory (LSTM) <br />
+
+
+
+
+
+
+###  Result:
+
+###  Demo:
 
 ### Acknowledgements:
 - Luciw, M. D., Jarocka, E., & Edin, B. B. (2014). Multi-channel EEG recordings during 3,936 grasp and lift trials with varying weight and friction. Scientific data, 1(1), 1-11. ([PDF](https://www.nature.com/articles/sdata201447))
