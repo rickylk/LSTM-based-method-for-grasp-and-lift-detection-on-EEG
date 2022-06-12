@@ -47,11 +47,12 @@ For more information about the dataset collection methodology, please refer to [
 ### Methodology: 
 
 #### Data Preprocessing
-- Preprocessing
-        - bypass filter           
-        - 
-        - 
-        - 
+- Preprocessing<br />
+   -  Bandpass filter <br />     
+   -  Bandpass-Beta filter   <br />     
+   -  FFT<br />
+   -  Standardize<br />
+   
 - Testing data <br />
 Since, the original dataset does not provide the ground truth label for testing data. <br />
 In our experiment, we split the training data into training and validation set, then use the validation data as our testing set. <br />
@@ -67,11 +68,16 @@ The proportion to split is 75:25 for training and validation. <br />
 
 
 
-###  Result:
-| Model   | Model Accuracy  | Remarks  |
-| :---:   | :-:             | :-: |
-| CNN     |                 |     |
-| LSTM    |                 |     |
+###  Experiment Settings and Results:
+- CNN <br />
+
+
+
+
+
+
+- LSTM  <br />
+
 
 ###  Demo:
 
