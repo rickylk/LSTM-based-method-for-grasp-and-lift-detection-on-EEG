@@ -51,18 +51,19 @@ For more information about the dataset collection methodology, please refer to [
 From figure 3, we visualize the raw data using EEGlab. We can see that the raw data contains a lot of artifacts for example the eye blinking that clearly display in channel 1,2,3 and 4. To remove these artifacts will help to improve the quality of our data before feeding them to the next process of feature extraction and classification. We apply multiple method of preprocessing as following;
 - Preprocessing<br />
    -  Lowpass filter <br />
-      The lowpass filter can allow the EEG signals with frequency lower than the cut-off frequency to pass through it. It is a good method to remove noise from the data. The cut-off frequency in the experiment of LSTM part is 35 Hz.
+      -  The lowpass filter can allow the EEG signals with frequency lower than the cut-off frequency to pass through it. It is a good method to remove noise from the data. The cut-off frequency in the experiment of LSTM part is 35 Hz.
    -  Bandpass filter <br />     
    -  Bandpass-Beta filter   <br />     
    -  FFT<br />
    -  Standardize<br />
-      Standardization can make features become standard normally distributed data and help model converge quickly and improve the accuracy of model.
+      - Standardization can make features become standard normally distributed data and help model converge quickly and improve the accuracy of model.
    -  Linear regression<br />
-      From the method of Wang (Wang et al., 2018), they use 1d-AX to preprocess data and then use LSTM to predict the result. When calculating the features using 1d-AX, they always divide the signal into segments of equal length, apply linear regression on every segment and get the slope and mean. In the experiment of LSTM part, we use the first two steps to preprocess the EEG data. By this way, the signal becomes smoother and some noise can also be removed. <br />
-      To find the best length for each segments, we try different lengths (100/50/25) and compare the results.
+      - From the method of Wang (Wang et al., 2018), they use 1d-AX to preprocess data and then use LSTM to predict the result. When calculating the features using 1d-AX, they always divide the signal into segments of equal length, apply linear regression on every segment and get the slope and mean. In the experiment of LSTM part, we use the first two steps to preprocess the EEG data. By this way, the signal becomes smoother and some noise can also be removed. <br /> 
+      - To find the best length for each segments, we try different lengths (100/50/25) and compare the results.
    -  Polynomial regression<br />
-      Polynomial regression is similar with linear regression, but the degree of linear regression is 1 and polynomial regression is more than 1. In the experiment of LSTM part, we try different degree. When the training data with 32 channels, the degree of polynomial regression is 4. When the training data with 11 channels, the degree of polynomial regression is 2. <br />
-      In addition, we also try different lengths of segments (100/50/25) and compare the results.
+      - Polynomial regression is similar with linear regression, but the degree of linear regression is 1 and polynomial regression is more than 1. In the experiment of LSTM part, we try different degree. When the training data with 32 channels, the degree of polynomial regression is 4. When the training data with 11 channels, the degree of polynomial regression is 2. <br />
+      - In addition, we also try different lengths of segments (100/50/25) and compare the results.<br />
+      - The following figure shows how the changes after the application of linear regression and polynomial regression
 ![capture_008_14062022_000352](https://user-images.githubusercontent.com/21188544/173396609-ba8d7678-6659-4f34-b0f3-482759bda2ff.jpg)
 
    
@@ -90,7 +91,6 @@ LSTM is another high-performanced model in present. While CNN is good at solving
 
 
 - LSTM  <br />
-   -  Experiment Settings <br />
    
    -  Results <br />
 ![capture_001_14062022_002716](https://user-images.githubusercontent.com/21188544/173400849-af9ba0ec-62e2-44ed-bce4-44f34dd9bf54.jpg)
