@@ -60,17 +60,13 @@ Since, the original dataset does not provide the ground truth label for testing 
 In our experiment, we split the training data into training and validation set, then use the validation data as our testing set. <br />
 The splitting proportion is 75:25 for training and validation. <br />
 - 
-#### Classification Model:
-We mainly set our experiment using two models which are Convolutional Neural Networks (CNN) and Long short-term memory (LSTM).<br />
+#### Classification Models:
+We mainly perform our experiment using two models which are Convolutional Neural Networks (CNN) and Long short-term memory (LSTM).<br />
 - Convolutional Neural Networks (CNN) <br />
-CNN is a deep learning method which is currently used to tackle many problems for example 
-
+CNN is a deep learning method which is popular widely used to tackle many complex problems including classification. We utilize CNN model to solve our problem and compare our results received from different settings such as the result without preprocessing application, the result using 14 channels and the result using 32 channels   
 
 - Long short-term memory (LSTM) <br />
-
-
-
-
+LSTM is another high-performanced model in present. While CNN is good at solving many complex problems, LSTM gives an impressive result on time-series data due to its special architecture. We perform the experiments without data-preprocessing, preprocessed data on 11 channels and preprocessed data on 32 channels. For the results in details can be found in the following part.
 
 
 ###  Experiment Settings and Results:
