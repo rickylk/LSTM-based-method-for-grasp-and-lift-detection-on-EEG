@@ -63,6 +63,7 @@ From figure 3, we visualize the raw data using EEGlab. We can see that the raw d
    -  Polynomial regression<br />
       Polynomial regression is similar with linear regression, but the degree of linear regression is 1 and polynomial regression is more than 1. In the experiment of LSTM part, we try different degree. When the training data with 32 channels, the degree of polynomial regression is 4. When the training data with 11 channels, the degree of polynomial regression is 2. <br />
       In addition, we also try different lengths of segments (100/50/25) and compare the results.
+![capture_008_14062022_000352](https://user-images.githubusercontent.com/21188544/173396609-ba8d7678-6659-4f34-b0f3-482759bda2ff.jpg)
 
    
 - Testing data <br />
@@ -89,7 +90,6 @@ LSTM is another high-performanced model in present. While CNN is good at solving
 
 
 - LSTM  <br />
-![capture_008_14062022_000352](https://user-images.githubusercontent.com/21188544/173396609-ba8d7678-6659-4f34-b0f3-482759bda2ff.jpg)
 ![capture_001_14062022_002716](https://user-images.githubusercontent.com/21188544/173400849-af9ba0ec-62e2-44ed-bce4-44f34dd9bf54.jpg)
 ![capture_002_14062022_002731](https://user-images.githubusercontent.com/21188544/173400882-b7505fbc-ce97-4d40-a5fd-78bec393d473.jpg)
 ![capture_003_14062022_002740](https://user-images.githubusercontent.com/21188544/173400940-f6b047c4-7d7c-4e93-b210-4c5920ee2376.jpg)
