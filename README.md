@@ -58,10 +58,10 @@ From figure 3, we visualize the raw data using EEGlab. We can see that the raw d
    -  Standardize<br />
       Standardization can make features become standard normally distributed data and help model converge quickly and improve the accuracy of model.
    -  Linear regression<br />
-      From the method of Wang (Wang et al., 2018), they use 1d-AX to preprocess data and then use LSTM to predict the result. When calculating the features using 1d-AX, they always divide the signal into segments of equal length, apply linear regression on every segment and get the slope and mean. In the experiment of LSTM part, we use the first two steps to preprocess the EEG data. By this way, the signal becomes smoother and some noise can also be removed.
+      From the method of Wang (Wang et al., 2018), they use 1d-AX to preprocess data and then use LSTM to predict the result. When calculating the features using 1d-AX, they always divide the signal into segments of equal length, apply linear regression on every segment and get the slope and mean. In the experiment of LSTM part, we use the first two steps to preprocess the EEG data. By this way, the signal becomes smoother and some noise can also be removed. <br />
       To find the best length for each segments, we try different lengths (100/50/25) and compare the results.
    -  Polynomial regression<br />
-      Polynomial regression is similar with linear regression, but the degree of linear regression is 1 and polynomial regression is more than 1. In the experiment of LSTM part, we try different degree. When the training data with 32 channels, the degree of polynomial regression is 4. When the training data with 11 channels, the degree of polynomial regression is 2.
+      Polynomial regression is similar with linear regression, but the degree of linear regression is 1 and polynomial regression is more than 1. In the experiment of LSTM part, we try different degree. When the training data with 32 channels, the degree of polynomial regression is 4. When the training data with 11 channels, the degree of polynomial regression is 2. <br />
       In addition, we also try different lengths of segments (100/50/25) and compare the results.
 
    
