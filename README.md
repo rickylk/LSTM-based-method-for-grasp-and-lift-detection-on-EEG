@@ -47,6 +47,8 @@ For more information about the dataset collection methodology, please refer to [
 ### Methodology: 
 
 #### Data Preprocessing:
+![capture_006_13062022_223220](https://user-images.githubusercontent.com/21188544/173377539-f0caa1d4-efcb-4f1e-a294-2d9b736a7fb4.jpg)
+From figure 3, we visualize the raw data using EEGlab. We can see that the raw data contains a lot of artifacts for example the eye blinking that clearly display in channel 1,2,3 and 4. To remove these artifacts will help to improve the quality of our data before feeding them to the next process of feature extraction and classification. We apply multiple method of preprocessing as following;
 - Preprocessing<br />
    -  Bandpass filter <br />     
    -  Bandpass-Beta filter   <br />     
