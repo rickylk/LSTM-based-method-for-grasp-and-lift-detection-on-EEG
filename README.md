@@ -55,6 +55,7 @@ From figure 3, we visualize the raw data using EEGlab. We can see that the raw d
    -  Bandpass-Beta filter   <br />     
    -  FFT<br />
    -  Standardize<br />
+      Standardization can make features become standard normally distributed data and help model converge quickly and improve the accuracy of model.
    -  Linear regression<br />
    -  Polynomial regression<br />
    
