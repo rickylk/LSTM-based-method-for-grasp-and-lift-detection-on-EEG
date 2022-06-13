@@ -46,7 +46,7 @@ For more information about the dataset collection methodology, please refer to [
 
 ### Methodology: 
 
-#### Data Preprocessing
+#### Data Preprocessing:
 - Preprocessing<br />
    -  Bandpass filter <br />     
    -  Bandpass-Beta filter   <br />     
@@ -58,7 +58,7 @@ Since, the original dataset does not provide the ground truth label for testing 
 In our experiment, we split the training data into training and validation set, then use the validation data as our testing set. <br />
 The proportion to split is 75:25 for training and validation. <br />
 - 
-#### Classification Model
+#### Classification Model:
 We mainly set our experiment using two models which are Convolutional Neural Networks (CNN) and Long short-term memory (LSTM).<br />
 - Convolutional Neural Networks (CNN) <br />
 CNN is a deep learning method which is currently used to tackle many problems for example 
@@ -81,7 +81,7 @@ CNN is a deep learning method which is currently used to tackle many problems fo
 
 - LSTM  <br />
 
-### Discussion
+### Discussion:
 
 ###  Demo:
 
