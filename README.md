@@ -79,8 +79,7 @@ LSTM is another high-performanced model in present. While CNN is good at solving
 
 - LSTM  <br />
 ![capture_008_14062022_000352](https://user-images.githubusercontent.com/21188544/173396609-ba8d7678-6659-4f34-b0f3-482759bda2ff.jpg)
-
-![Presentation1](https://user-images.githubusercontent.com/21188544/173396691-43910e56-0d44-4be8-be99-c02c590f11e3.jpg)
+![BCI result2](https://user-images.githubusercontent.com/21188544/173398219-2469530f-2a3d-416a-8d5b-95f0bed8a336.jpg)
 
 
 ### Discussion:
