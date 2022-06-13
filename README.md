@@ -96,6 +96,7 @@ LSTM is another high-performanced model in present. While CNN is good at solving
 - Li, S., & Feng, H. (2019, July). EEG signal classification method based on feature priority analysis and CNN. In 2019 International Conference on Communications, Information System and Computer Engineering (CISCE) (pp. 403-406). IEEE. ([PDF](https://ieeexplore.ieee.org/abstract/document/8805870))
 - Alexandre Barachant, Rafał Cycon. Pushing the limits of BCI accuracy: Winning solution of the Grasp & Lift EEG challenge. 6th International Brain-Computer Interface Meeting, May 2016, Monterey, United States. ⟨hal-01349562⟩ [PDF](https://hal.archives-ouvertes.fr/hal-01349562/)
 - Deep Learning for Grasp-and-Lift Movement Forecasting Based on Electroencephalography by Brain-Computer Interface [PDF](https://link.springer.com/chapter/10.1007/978-3-030-80475-6_1)
+- Wang, P., Jiang, A., Liu, X., Shang, J., & Zhang, L. (2018). LSTM-based EEG classification in motor imagery tasks. IEEE transactions on neural systems and rehabilitation engineering, 26(11), 2086-2095. ([PDF](https://ieeexplore.ieee.org/abstract/document/8496885))
 - 
 ----------------------------------------------------------------------------
 #### Author.
