@@ -51,13 +51,19 @@ For more information about the dataset collection methodology, please refer to [
 From figure 3, we visualize the raw data using EEGlab. We can see that the raw data contains a lot of artifacts for example the eye blinking that clearly display in channel 1,2,3 and 4. To remove these artifacts will help to improve the quality of our data before feeding them to the next process of feature extraction and classification. We apply multiple method of preprocessing as following;
 - Preprocessing<br />
    -  Lowpass filter <br />
+      The lowpass filter can allow the EEG signals with frequency lower than the cut-off frequency to pass through it. It is a good method to remove noise from the data. The cut-off frequency in the experiment of LSTM part is 35 Hz.
    -  Bandpass filter <br />     
    -  Bandpass-Beta filter   <br />     
    -  FFT<br />
    -  Standardize<br />
       Standardization can make features become standard normally distributed data and help model converge quickly and improve the accuracy of model.
    -  Linear regression<br />
+      From the method of Wang (Wang et al., 2018), they use 1d-AX to preprocess data and then use LSTM to predict the result. When calculating the features using 1d-AX, they always divide the signal into segments of equal length, apply linear regression on every segment and get the slope and mean. In the experiment of LSTM part, we use the first two steps to preprocess the EEG data. By this way, the signal becomes smoother and some noise can also be removed.
+      To find the best length for each segments, we try different lengths (100/50/25) and compare the results.
    -  Polynomial regression<br />
+      Polynomial regression is similar with linear regression, but the degree of linear regression is 1 and polynomial regression is more than 1. In the experiment of LSTM part, we try different degree. When the training data with 32 channels, the degree of polynomial regression is 4. When the training data with 11 channels, the degree of polynomial regression is 2.
+      In addition, we also try different lengths of segments (100/50/25) and compare the results.
+
    
 - Testing data <br />
 Since, the original dataset does not provide the ground truth label for testing data. <br />
