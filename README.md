@@ -39,7 +39,7 @@ However, in this study, we will focus on EEG data only. The brief information of
 For data collection, this dataset is recorded using EEG sensor ActiCap 32 channals in conjunction with BrainAmp EEG signal amplifier. After preprocessing, the ready to use data sample rate is 500 Hz.
         
 ![capture_001_13062022_014953](https://user-images.githubusercontent.com/21188544/173246397-fa775461-8c87-4b51-9361-91c28a9a5603.jpg)
-Figure1 displays the EEG map of ActiCap and the location of each channel. For our task, we are going to classify the different hand movement which is controlled by primory motor cortex and primary sensory cortex, figure 2. So, we will focus on using the data which location is on these part of the brain which are: T7, C5, C3, C1, Cz, C2, C4, C8, T8, TP9, TP7, CP5, CP1, CPz, CP2, CP4, Cp6, TP8 and TP10.
+Figure1 displays the EEG map of ActiCap and the location of each channel. For our task, we are going to classify the different hand movement which is controlled by primory motor cortex and primary sensory cortex, figure 2. So, we will focus on using the data which location is on these part of the brain which are in highlight area.
 
 To download the file, please visit [folder data](https://github.com/rickylk/LSTM-based-method-for-grasp-and-lift-detection-on-EEG/tree/main/data) or [click]( https://www.kaggle.com/competitions/grasp-and-lift-eeg-detection/data) <br />
 For more information about the dataset collection methodology, please refer to [click](https://www.nature.com/articles/sdata201447) <br />
@@ -50,10 +50,13 @@ For more information about the dataset collection methodology, please refer to [
 ![capture_006_13062022_223220](https://user-images.githubusercontent.com/21188544/173377539-f0caa1d4-efcb-4f1e-a294-2d9b736a7fb4.jpg)
 From figure 3, we visualize the raw data using EEGlab. We can see that the raw data contains a lot of artifacts for example the eye blinking that clearly display in channel 1,2,3 and 4. To remove these artifacts will help to improve the quality of our data before feeding them to the next process of feature extraction and classification. We apply multiple method of preprocessing as following;
 - Preprocessing<br />
+   -  Lowpass filter <br />
    -  Bandpass filter <br />     
    -  Bandpass-Beta filter   <br />     
    -  FFT<br />
    -  Standardize<br />
+   -  Linear regression<br />
+   -  Polynomial regression<br />
    
 - Testing data <br />
 Since, the original dataset does not provide the ground truth label for testing data. <br />
