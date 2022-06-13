@@ -59,7 +59,7 @@ From figure 3, we visualize the raw data using EEGlab. We can see that the raw d
 Since, the original dataset does not provide the ground truth label for testing data. <br />
 In our experiment, we split the training data into training and validation set, then use the validation data as our testing set. <br />
 The splitting proportion is 75:25 for training and validation. <br />
-- 
+
 #### Classification Models:
 We mainly perform our experiment using two models which are Convolutional Neural Networks (CNN) and Long short-term memory (LSTM).<br />
 - Convolutional Neural Networks (CNN) <br />
@@ -78,6 +78,11 @@ LSTM is another high-performanced model in present. While CNN is good at solving
 
 
 - LSTM  <br />
+
+![capture_007_13062022_235212](https://user-images.githubusercontent.com/21188544/173394241-7485d9ae-0c6a-4a17-af0f-8e4c1b692fff.jpg)
+
+![Presentation1_LSTM](https://user-images.githubusercontent.com/21188544/173394045-4d8a84b1-3e81-4439-ab96-c53cbbf8ea02.jpg)
+
 
 ### Discussion:
 
