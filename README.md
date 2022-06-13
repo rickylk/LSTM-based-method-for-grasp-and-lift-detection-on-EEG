@@ -60,11 +60,9 @@ The proportion to split is 75:25 for training and validation. <br />
 - 
 #### Classification Model
 We mainly set our experiment using two models which are Convolutional Neural Networks (CNN) and Long short-term memory (LSTM).<br />
- 
-while LSTM is suitable for time-series data. 
-
-
 - Convolutional Neural Networks (CNN) <br />
+CNN is a deep learning method which is currently used to tackle many problems for example 
+
 
 - Long short-term memory (LSTM) <br />
 
@@ -83,6 +81,7 @@ while LSTM is suitable for time-series data.
 
 - LSTM  <br />
 
+### Discussion
 
 ###  Demo:
 
