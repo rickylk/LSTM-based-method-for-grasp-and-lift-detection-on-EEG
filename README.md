@@ -59,6 +59,11 @@ In our experiment, we split the training data into training and validation set, 
 The proportion to split is 75:25 for training and validation. <br />
 - 
 #### Classification Model
+We mainly set our experiment using two models which are Convolutional Neural Networks (CNN) and Long short-term memory (LSTM).<br />
+ 
+while LSTM is suitable for time-series data. 
+
+
 - Convolutional Neural Networks (CNN) <br />
 
 - Long short-term memory (LSTM) <br />
