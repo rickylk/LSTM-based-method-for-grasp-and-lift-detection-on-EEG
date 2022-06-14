@@ -112,7 +112,7 @@ GAL dataset contains 32 channels in total. However, our task is focusing on hand
 From the result below, we can see that beta preprocessing results in the highest score in Train_acc, Test_acc and Test1_acc with the accuracy of 0.865, 0.937 and 0.449 respectively, while the highest score among all is obtained by Train_acc with beta preprocessing on 32 channels.  <br />
 
 With Bandpass filter preprocessing, the highest score of 0.845 is achieved by Train_acc on 14 channels and with FFT preprocessing, the highest score with accuracy of 0.856 is from Train_acc on 14 channels. <br />
-![capture_002_14062022_114423](https://user-images.githubusercontent.com/21188544/173489003-05fdebb7-60ca-465e-964d-05f84711d4a5.jpg)
+![capture_005_14062022_143306](https://user-images.githubusercontent.com/21188544/173509028-931ddc4d-4f47-4f3d-813f-cc4e40d3eb1c.jpg)
 
 ----------------------------------------------------------------------------
 
