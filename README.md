@@ -120,8 +120,13 @@ With Bandpass filter preprocessing, the highest score of 0.845 is achieved by Tr
 
 
 ### Discussion:
-With LSTM model, we can see that with 11 channels, the accuracy is not as high as others, indicating that the data from 11 channels is not efficient enough to perform a good classification on this 6  different hand movement. So, we adjust the number of channels to 14 and perform our experiments again on CNN model.
+With LSTM model, we can see that with 11 channels, the accuracy is not as high as others, indicating that the data from 11 channels is not efficient enough to perform a good classification on this 6  different hand movement. So, we adjust the number of channels to 14 and perform our experiments again on CNN model.<br />
 
+From the results of CNN model. From the result table above, with FFT application, the training accuracy is highest among other accuracy on both 14 channels and 32 channels while the validation accuracy, the testing accuracy and testing1 accuracy are comparatively lower. These scores may indicate that the training data is easier to classify than the validation and testing data and the model may become overfitting since the accuracy on testing and testing1 set are significantly lower than the training accuracy.<br />
+
+For Val_acc, from all preprocessing methods, we can see that the validation on FFT application is the highest among other preprocessing method on both 14 channel and 32 channels. <br />
+
+For Beta preprocessing of 32 channels, the testing accuracy is very high at the score of 0.834 while dropping to 0.379 on testing 1 accuracy. This is caused by two reasons. First, the testing accuracy uses the six-digit label [0 0 0 1 0 0] which is very large compared to using the label as 1 digit, for example, label 1,2,3,4,5 or 6. For binary classification, when the label contains 6 digits, with the ratio of 1 and 0 is 1:5. The model is more likely to fit the number 0 than 1. Therefore, the result of the model performs better on testing accuracy than testing1 accuracy, that converts the label from 6 digits to 1 digit.<br />
 
 ###  Demo:
 
