@@ -55,9 +55,11 @@ From figure 3, we visualize the raw data using EEGlab. We can see that the raw d
 - Preprocessing<br />
    -  Lowpass filter <br />
       -  The lowpass filter can allow the EEG signals with frequency lower than the cut-off frequency to pass through it. It is a good method to remove noise from the data. The cut-off frequency in the experiment of LSTM part is 35 Hz.
-   -  Bandpass filter <br />     
-   -  Bandpass-Beta filter   <br />     
-   -  FFT<br />
+   -  Bandpass filter <br />    
+      - The bandpass filter allows the selected range of frequencies to pass the filter and remove the unwanted frequencies of signal. Bandpass filter also helps to optimize the signal-to-noise ratio, or in other words improve the quality of the signal.       
+   -  Fast Fourier transform (FFT)<br />
+      - FFT is the algorithm that calculate the discrete fourier transform of a sequence. FFT converts the digital signal data from time domain to frequency domain 
+   -  Beta filter   <br />  
    -  Standardize<br />
       - Standardization can make features become standard normally distributed data and help model converge quickly and improve the accuracy of model.
    -  Linear regression<br />
