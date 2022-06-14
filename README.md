@@ -115,6 +115,8 @@ With Bandpass filter preprocessing, the highest score of 0.845 is achieved by Tr
 
 
 ### Discussion:
+With LSTM model, we can see that with 11 channels, the accuracy is not as high as others, indicating that the data from 11 channels is not efficient enough to perform a good classification on this 6  different hand movement. So, we adjust the number of channels to 14 and perform our experiments again on CNN model.
+
 
 ###  Demo:
 
