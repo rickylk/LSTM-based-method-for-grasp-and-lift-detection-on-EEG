@@ -93,10 +93,14 @@ LSTM is another high-performanced model in present. While CNN is good at solving
 - LSTM  <br />
    -  Because LSTM is good at processing time-series data, we use the previous two seconds of data to predict the next point’s event. The sample rate of our dataset is 500 Hz, so there are totally 1000 points as the input to the LSTM. To reduce the input data, we subsample the input data and the subsample rate is 50. Therefore, the input data can be reduced to only 20 points. <br />
    -  In our dataset, most labels are [0 0 0 0 0 0]. This means that most of the time nothing happens. To focus on event prediction, we remove the labels of [0 0 0 0 0 0] and compare the accuracy when model predict the events. <br />
-   -  Results <br />
+   -  The below tables show the result of LTSM model. We compare the effect of different channels and preprocessing methods on the results. <br />
+   -  From the results of 32 channels, it can be found that when the data preprocessed with lowpass filter and standardization, the accuracy is not improved but decreased. However, lowpass filter and standardization significantly improve the accuracy of 11 channels. In addition, we also use PCA to reduce the dimension of 32 channels to 11 channels. From the result, the accuracy of 11 channels is better than 32 channels with PCA. We think it is because PCA may distort original data and decrease the accuracy. <br />
 ![capture_001_14062022_002716](https://user-images.githubusercontent.com/21188544/173400849-af9ba0ec-62e2-44ed-bce4-44f34dd9bf54.jpg)
+   -   <br />
 ![capture_002_14062022_002731](https://user-images.githubusercontent.com/21188544/173400882-b7505fbc-ce97-4d40-a5fd-78bec393d473.jpg)
+   -   <br />
 ![capture_003_14062022_002740](https://user-images.githubusercontent.com/21188544/173400940-f6b047c4-7d7c-4e93-b210-4c5920ee2376.jpg)
+   -   <br />
 
 
 
