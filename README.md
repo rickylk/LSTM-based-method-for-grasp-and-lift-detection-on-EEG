@@ -120,6 +120,10 @@ With Bandpass filter preprocessing, the highest score of 0.845 is achieved by Tr
 ----------------------------------------------------------------------------
 
 ### 6. Discussion:
+In the experiment of LSTM, when training the model, the training accuracy and validation accuracy are almost above 85% under 11 channels and 32 channels. However, the testing accuracies drop significantly. The best testing accuracy of 11 channels is only 51%, and the best testing accuracy of 32 channels is only 69%. About this problem, we think it is because the model has already overfit. To solve this problem, there are some common methods, such as simplifying the model and early stop. We will try these methods in the future to improve the current results. <br />
+
+From the results of different channels, it is obvious that using data with 32 channels is better than 11 channels. We think this is quite reasonable because data with 32 channels contain more features. Though the result of 11 channels is not good enough, it shows these 11 channels is important for classifying hand movements. <br />
+
 With LSTM model, we can see that with 11 channels, the accuracy is not as high as others, indicating that the data from 11 channels is not efficient enough to perform a good classification on 6 different hand movements. Therefore, we adjust the number of channels to 14 and perform our experiments again on CNN model. <br />
 
 For CNN model, from the result shown in table above, with FFT application, the training accuracy is highest among other accuracy on both 14 channels and 32 channels. While the validation accuracy is high, the testing accuracy and testing1 accuracy are comparatively lower. These scores indicate that the training data is easier to classify than the validation and testing data.The validation accuracy of FFT application is also the highest among other preprocessing method on both 14 channel and 32 channels. <br />
