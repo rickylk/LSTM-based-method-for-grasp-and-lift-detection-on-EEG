@@ -5,12 +5,16 @@
 This is project for fulfilment of the course Brain Computer Interfaces and Application. <br />
 National Tsing Hua University, Taiwan, R.O.C, Spring Semester 2021. <br /> <br />
 
+### Materials
+Project proposal: [Here](https://docs.google.com/presentation/d/17Lb9k7V1zG_rWtpeJskX08m1WGs6smFaxS5O0AqAxZ8/edit?usp=sharing)<br />
+Project demo slide: [Here](https://docs.google.com/presentation/d/1fxHWNvNH8yGjF1S2BwcqpV5jJlt2WBBM5NpfJ-hYSlU/edit?usp=sharing)
+
+----------------------------------------------------------------------------
 ### 1. Introduction
 ![capture_001_02062022_030150](https://user-images.githubusercontent.com/21188544/171482094-eae8c6ea-ebeb-4df1-8442-c8b805d3283a.jpg)
 After the first EEG data was record in 1924 by Hans Berger, a German psychiatrist. There are many researches developed based on EEG data, since EEG data is rich in infortaion and containing all body activities in term of signal. BCI is also one popular research domain that mainly developed based on EEG data with an intention to help people to be able to directly control the computer from the brain. Especially, for people with disabilities, BCI helps to enhance their life quality to live more independently and more convenient.<br />
 
-In this project, we implement and develop the machine learning approach to classify the different hand movements using EEG data.<br />
-This challenge was a research prediction competition on Kaggle in 2015, which the competition result can be found [here ](https://hal.archives-ouvertes.fr/hal-01349562/)<br />
+In this project, we implement and develop the machine learning approach to classify the different hand movements using EEG data.This challenge was a research prediction competition on Kaggle in 2015, which the competition result can be found [here ](https://hal.archives-ouvertes.fr/hal-01349562/)<br />
 For more information about the competition, [Pleas click here ](https://www.kaggle.com/competitions/grasp-and-lift-eeg-detection/data)
 
 ----------------------------------------------------------------------------
@@ -34,10 +38,10 @@ This dataset not contains only EEG data but also includes EMG data and 3D of bot
 However, in this study, we will focus on EEG data only. The brief information of the dataset is shown below; <br />
   - 12 participants, 10 series of trial subjects and ~ 30 trials on each series, 3,960 trials in total.<br />
   - 6 labels: Hand Start, First Digit Touch, Both Start Load Phase, Lift Off, Replace, Both Released.
-  - Object used and action:<br />
-        - different weight (165, 330, 660 g).<br />
-        - different surface (sandpaper, suede, silk surface).<br />
-        - different action e.g. enforcing change in fingertip, grasp with thumb and index finger and  lift and hold.<br />
+  - Object used and action:
+    -  different weight (165, 330, 660 g).
+    -  different surface (sandpaper, suede, silk surface).
+    -  different action e.g. enforcing change in fingertip, grasp with thumb and index finger and  lift and hold.
 For data collection, this dataset is recorded using EEG sensor ActiCap 32 channals in conjunction with BrainAmp EEG signal amplifier. After preprocessing, the ready to use data sample rate is 500 Hz.
         
 ![capture_001_13062022_014953](https://user-images.githubusercontent.com/21188544/173246397-fa775461-8c87-4b51-9361-91c28a9a5603.jpg)
@@ -135,6 +139,8 @@ In summary, the experiment with LSTM model using multiple preprocessing methods 
 
 ----------------------------------------------------------------------------
 ### 7. Demo:
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+
 ----------------------------------------------------------------------------
 ### 8. Acknowledgements:
 - Luciw, M. D., Jarocka, E., & Edin, B. B. (2014). Multi-channel EEG recordings during 3,936 grasp and lift trials with varying weight and friction. Scientific data, 1(1), 1-11. ([PDF](https://www.nature.com/articles/sdata201447))
