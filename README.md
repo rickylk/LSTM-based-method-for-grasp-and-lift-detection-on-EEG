@@ -139,7 +139,8 @@ In summary, the experiment with LSTM model using multiple preprocessing methods 
 
 ----------------------------------------------------------------------------
 ### 7. Demo:
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+
+https://user-images.githubusercontent.com/21188544/173550625-761b8887-fbb9-4b8d-ad2f-455313958f2f.mp4
 
 ----------------------------------------------------------------------------
 ### 8. Acknowledgements:
