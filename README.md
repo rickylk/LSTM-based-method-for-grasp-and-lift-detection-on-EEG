@@ -5,7 +5,7 @@
 This is project for fulfilment of the course Brain Computer Interfaces and Application. <br />
 National Tsing Hua University, Taiwan, R.O.C, Spring Semester 2021. <br /> <br />
 
-### Introduction
+### 1. Introduction
 ![capture_001_02062022_030150](https://user-images.githubusercontent.com/21188544/171482094-eae8c6ea-ebeb-4df1-8442-c8b805d3283a.jpg)
 After the first EEG data was record in 1924 by Hans Berger, a German psychiatrist. There are many researches developed based on EEG data, since EEG data is rich in infortaion and containing all body activities in term of signal. BCI is also one popular research domain that mainly developed based on EEG data with an intention to help people to be able to directly control the computer from the brain. Especially, for people with disabilities, BCI helps to enhance their life quality to live more independently and more convenient.<br />
 
@@ -13,14 +13,16 @@ In this project, we implement and develop the machine learning approach to class
 This challenge was a research prediction competition on Kaggle in 2015, which the competition result can be found [here ](https://hal.archives-ouvertes.fr/hal-01349562/)<br />
 For more information about the competition, [Pleas click here ](https://www.kaggle.com/competitions/grasp-and-lift-eeg-detection/data)
 
+----------------------------------------------------------------------------
 
-### Project objective:
+### 2. Project objective:
 1. To find the significant features that can improve the model performance.
 2. To implement the classification model to accurately classify the different hand movements by using EEG signals.
 3. To find the high heavyweight channels, cancel other channels to increase the efficiency of the model.<br />
  
+----------------------------------------------------------------------------
 
-### Dataset:
+### 3. Dataset:
 We use 'Grasp-and-Lift EEG Detection (GAL) dataset' (Luciw, Jarocka & Edin, 2014) as our dataset. <br />
 The paper was published in 2014 and the dataset was used for a prediction competition on Kaggle in 2015. <br />
 
@@ -44,9 +46,10 @@ Figure1 displays the EEG map of ActiCap and the location of each channel. For ou
 To download the file, please visit [folder data](https://github.com/rickylk/LSTM-based-method-for-grasp-and-lift-detection-on-EEG/tree/main/data) or [click]( https://www.kaggle.com/competitions/grasp-and-lift-eeg-detection/data) <br />
 For more information about the dataset collection methodology, please refer to [click](https://www.nature.com/articles/sdata201447) <br />
 
-### Methodology: 
+----------------------------------------------------------------------------
+### 4. Methodology: 
 
-#### Data Preprocessing:
+#### 4.1 Data Preprocessing:
 ![capture_006_13062022_223220](https://user-images.githubusercontent.com/21188544/173377539-f0caa1d4-efcb-4f1e-a294-2d9b736a7fb4.jpg)
 From figure 3, we visualize the raw data using EEGlab. We can see that the raw data contains a lot of artifacts for example the eye blinking that clearly display in channel 1,2,3 and 4. To remove these artifacts will help to improve the quality of our data before feeding them to the next process of feature extraction and classification. We apply multiple method of preprocessing as following;
 - Preprocessing<br />
@@ -72,7 +75,7 @@ Since, the original dataset does not provide the ground truth label for testing 
 In our experiment, we split the training data into training and validation set, then use the validation data as our testing set. <br />
 The splitting proportion is 75:25 for training and validation. <br />
 
-#### Classification Models:
+#### 4.2 Classification Models:
 We mainly perform our experiment using two models which are Convolutional Neural Networks (CNN) and Long short-term memory (LSTM).<br />
 - Convolutional Neural Networks (CNN) <br />
 CNN is a deep learning method which is popular widely used to tackle many complex problems including classification. We utilize CNN model to solve our problem and compare our results received from different settings such as the result without preprocessing application, the result using 14 channels and the result using 32 channels   
@@ -80,8 +83,8 @@ CNN is a deep learning method which is popular widely used to tackle many comple
 - Long short-term memory (LSTM) <br />
 LSTM is another high-performanced model in present. While CNN is good at solving many complex problems, LSTM gives an impressive result on time-series data due to its special architecture. We perform the experiments without data-preprocessing, preprocessed data on 11 channels and preprocessed data on 32 channels. For the results in details can be found in the following part.
 
-
-###  Experiment Settings and Results:
+----------------------------------------------------------------------------
+###  5. Experiment Settings and Results:
 We used 3 preprocessing methods and 3 set of different numbers of channels for the experiments.We utilize  FFT, Beta and Bandpass filter for [1:50] to preprocess the data for CNN model.  By applying FFT, it will convert the data and we can visualize it to see in term of frequency distribution. Second, beta wave is also a part of FFT, which frequency is between [12:30], beta wave is useful for motion classification. Last, Bandpass filter, the filter helps to eliminate noise in the data.<br /> 
 
 GAL dataset contains 32 channels in total. However, our task is focusing on hand motion classification, which is mainly controlled by the primary motor cortex and primary sensory cortex. Therefore, we perform the experiments using 3 settings:
@@ -90,21 +93,7 @@ GAL dataset contains 32 channels in total. However, our task is focusing on hand
 2. 14 channels, which are FC1, FC2, FC5, FC6, C3, C4, T7, T8, TP9, TP10, CP1, CP2, CP5, CP6.
 3. All 32 channels. 
 
-#### CNN <br />
-
-From the result below, we can see that beta preprocessing on 32 channels results in the highest score in Train_acc, Test_acc and Test1_acc with the accuracy of 0.865, 0.937 and 0.449 respectively, while the highest score among all is obtained by Train_acc with beta preprocessing on 32 channels.  <br />
-
-With Bandpass filter preprocessing, the highest score of 0.845 is achieved by Train_acc on 14 channels and with FFT preprocessing, the highest score with accuracy of 0.856 is from Train_acc on 14 channels. <br />
-![capture_002_14062022_114423](https://user-images.githubusercontent.com/21188544/173489003-05fdebb7-60ca-465e-964d-05f84711d4a5.jpg)
-
-
-
-
-
-
-
-
-#### LSTM  <br />
+#### 5.1 LSTM  <br />
    -  Because LSTM is good at processing time-series data, we use the previous two seconds of data to predict the next point’s event. The sample rate of our dataset is 500 Hz, so there are totally 1000 points as the input to the LSTM. To reduce the input data, we subsample the input data and the subsample rate is 1/50 points. Therefore, the input data can be reduced to only 20 points. <br />
    -  In our dataset, most labels are [0 0 0 0 0 0]. This means that most of the time nothing happens. To focus on event prediction, we remove the labels of [0 0 0 0 0 0] and compare the accuracy when model predict the events. <br />
    -  The below tables show the result of LTSM model. We compare the effect of different channels and preprocessing methods on the results. <br />
@@ -117,9 +106,16 @@ With Bandpass filter preprocessing, the highest score of 0.845 is achieved by Tr
 ![capture_003_14062022_002740](https://user-images.githubusercontent.com/21188544/173400940-f6b047c4-7d7c-4e93-b210-4c5920ee2376.jpg)
    -  In conclusion, from the results, when using data with 32 channels, the best accuracy is 0.6956. The preprocessing methods are lowpass filter, linear regression and standardization. The length of segments for linear regression is 50 points. When using data with 11 channels, the best accuracy is 0.5181. The preprocessing methods are linear regression and standardization. The length of segments for linear regression is also 50 points. <br />
 
+#### 5.2 CNN <br />
 
+From the result below, we can see that beta preprocessing on 32 channels results in the highest score in Train_acc, Test_acc and Test1_acc with the accuracy of 0.865, 0.937 and 0.449 respectively, while the highest score among all is obtained by Train_acc with beta preprocessing on 32 channels.  <br />
 
-### Discussion:
+With Bandpass filter preprocessing, the highest score of 0.845 is achieved by Train_acc on 14 channels and with FFT preprocessing, the highest score with accuracy of 0.856 is from Train_acc on 14 channels. <br />
+![capture_002_14062022_114423](https://user-images.githubusercontent.com/21188544/173489003-05fdebb7-60ca-465e-964d-05f84711d4a5.jpg)
+
+----------------------------------------------------------------------------
+
+### 6. Discussion:
 With LSTM model, we can see that with 11 channels, the accuracy is not as high as others, indicating that the data from 11 channels is not efficient enough to perform a good classification on this 6  different hand movement. So, we adjust the number of channels to 14 and perform our experiments again on CNN model.<br />
 
 From the results of CNN model. From the result table above, with FFT application, the training accuracy is highest among other accuracy on both 14 channels and 32 channels while the validation accuracy, the testing accuracy and testing1 accuracy are comparatively lower. These scores may indicate that the training data is easier to classify than the validation and testing data and the model may become overfitting since the accuracy on testing and testing1 set are significantly lower than the training accuracy.<br />
@@ -128,9 +124,10 @@ For Val_acc, from all preprocessing methods, we can see that the validation on F
 
 For Beta preprocessing of 32 channels, the testing accuracy is very high at the score of 0.834 while dropping to 0.379 on testing 1 accuracy. This is caused by two reasons. First, the testing accuracy uses the six-digit label [0 0 0 1 0 0] which is very large compared to using the label as 1 digit, for example, label 1,2,3,4,5 or 6. For binary classification, when the label contains 6 digits, with the ratio of 1 and 0 is 1:5. The model is more likely to fit the number 0 than 1. Therefore, the result of the model performs better on testing accuracy than testing1 accuracy, that converts the label from 6 digits to 1 digit.<br />
 
-###  Demo:
-
-### Acknowledgements:
+----------------------------------------------------------------------------
+### 7. Demo:
+----------------------------------------------------------------------------
+### 8. Acknowledgements:
 - Luciw, M. D., Jarocka, E., & Edin, B. B. (2014). Multi-channel EEG recordings during 3,936 grasp and lift trials with varying weight and friction. Scientific data, 1(1), 1-11. ([PDF](https://www.nature.com/articles/sdata201447))
 - Várszegi, K. (2016, October). Comparison of algorithms for detecting hand movement from EEG signals. In 2016 IEEE International Conference on Systems, Man, and Cybernetics (SMC) (pp. 002208-002213). IEEE.([PDF](https://ieeexplore.ieee.org/abstract/document/7844566))
 - Li, S., & Feng, H. (2019, July). EEG signal classification method based on feature priority analysis and CNN. In 2019 International Conference on Communications, Information System and Computer Engineering (CISCE) (pp. 403-406). IEEE. ([PDF](https://ieeexplore.ieee.org/abstract/document/8805870))
