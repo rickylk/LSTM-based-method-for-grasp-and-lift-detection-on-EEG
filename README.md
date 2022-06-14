@@ -113,8 +113,9 @@ With Bandpass filter preprocessing, the highest score of 0.845 is achieved by Tr
    -  In the method of Wang (Wang et al., 2018), they use 1d-AX to replace bandpass filter when preprocessing signal. Therefore, we compare the accuracy with and without lowpass filter when applying linear regression on the data. <br />
    -  From the below results, when we use the data with 32 channels, the accuracy with lowpass filter is better. However, the results are reversed under 11 channels. We think this means that when more channels we use, linear regression can’t completely replace the lowpass filter. About the result of segments with different length, we found the overall best accuracy is using segments with 50 points. We think this result is closely related with the subsample rate which is 1/50 points. It may have different result when using different subsample rate. <br />
 ![capture_002_14062022_002731](https://user-images.githubusercontent.com/21188544/173400882-b7505fbc-ce97-4d40-a5fd-78bec393d473.jpg)
-   -  Results <br />
+   -  The overall results of using polynomial regression is worse than linear regression, especially using the data with 32 channels. We think this is related to the degree of polynomial regression. In the experiment, the degree of 32 channels is 4 and the degree of 11 channels is 2. This result shows when using regression with higher degree, the less noise will be removed. <br />
 ![capture_003_14062022_002740](https://user-images.githubusercontent.com/21188544/173400940-f6b047c4-7d7c-4e93-b210-4c5920ee2376.jpg)
+   -  In conclusion, from the results, when using data with 32 channels, the best accuracy is 0.6956. The preprocessing methods are lowpass filter, linear regression and standardization. The length of segments for linear regression is 50 points. When using data with 11 channels, the best accuracy is 0.5181. The preprocessing methods are linear regression and standardization. The length of segments for linear regression is also 50 points. <br />
 
 
 
