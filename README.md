@@ -82,25 +82,35 @@ LSTM is another high-performanced model in present. While CNN is good at solving
 
 
 ###  Experiment Settings and Results:
-- CNN <br />
-![capture_004_14062022_002749](https://user-images.githubusercontent.com/21188544/173400795-b8b4e5e3-4e9e-439b-b13b-d9b66dad840a.jpg)
+We used 3 preprocessing methods and 3 set of different numbers of channels for the experiments.We utilize  FFT, Beta and Bandpass filter for [1:50] to preprocess the data for CNN model.  By applying FFT, it will convert the data and we can visualize it to see in term of frequency distribution. Second, beta wave is also a part of FFT, which frequency is between [12:30], beta wave is useful for motion classification. Last, Bandpass filter, the filter helps to eliminate noise in the data.<br /> 
+
+GAL dataset contains 32 channels in total. However, our task is focusing on hand motion classification, which is mainly controlled by the primary motor cortex and primary sensory cortex. Therefore, we perform the experiments using 3 settings:
+
+1. 11 channels, which are C3, C4, Cz,T7, T8, TP9, TP10, CP1, CP2, CP5, CP6.
+2. 14 channels, which are FC1, FC2, FC5, FC6, C3, C4, T7, T8, TP9, TP10, CP1, CP2, CP5, CP6.
+3. All 32 channels. 
+
+#### CNN <br />
+
+From the result below, we can see that beta preprocessing on 32 channels results in the highest score in Train_acc, Test_acc and Test1_acc with the accuracy of 0.865, 0.937 and 0.449 respectively, while the highest score among all is obtained by Train_acc with beta preprocessing on 32 channels.  <br />
+
+With Bandpass filter preprocessing, the highest score of 0.845 is achieved by Train_acc on 14 channels and with FFT preprocessing, the highest score with accuracy of 0.856 is from Train_acc on 14 channels. <br />
+![capture_002_14062022_114423](https://user-images.githubusercontent.com/21188544/173489003-05fdebb7-60ca-465e-964d-05f84711d4a5.jpg)
 
 
 
 
 
 
-- LSTM  <br />
+
+
+#### LSTM  <br />
    -  Because LSTM is good at processing time-series data, we use the previous two seconds of data to predict the next point’s event. The sample rate of our dataset is 500 Hz, so there are totally 1000 points as the input to the LSTM. To reduce the input data, we subsample the input data and the subsample rate is 50. Therefore, the input data can be reduced to only 20 points. <br />
    -  In our dataset, most labels are [0 0 0 0 0 0]. This means that most of the time nothing happens. To focus on event prediction, we remove the labels of [0 0 0 0 0 0] and compare the accuracy when model predict the events. <br />
-   -  The below tables show the result of LTSM model. We compare the effect of different channels and preprocessing methods on the results. <br />
-   -  From the results of 32 channels, it can be found that when the data preprocessed with lowpass filter and standardization, the accuracy is not improved but decreased. However, lowpass filter and standardization significantly improve the accuracy of 11 channels. In addition, we also use PCA to reduce the dimension of 32 channels to 11 channels. From the result, the accuracy of 11 channels is better than 32 channels with PCA. We think it is because PCA may distort original data and decrease the accuracy. <br />
+   -  Results <br />
 ![capture_001_14062022_002716](https://user-images.githubusercontent.com/21188544/173400849-af9ba0ec-62e2-44ed-bce4-44f34dd9bf54.jpg)
-   -   <br />
 ![capture_002_14062022_002731](https://user-images.githubusercontent.com/21188544/173400882-b7505fbc-ce97-4d40-a5fd-78bec393d473.jpg)
-   -   <br />
 ![capture_003_14062022_002740](https://user-images.githubusercontent.com/21188544/173400940-f6b047c4-7d7c-4e93-b210-4c5920ee2376.jpg)
-   -   <br />
 
 
 
