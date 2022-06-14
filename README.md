@@ -76,12 +76,13 @@ In our experiment, we split the training data into training and validation set, 
 The splitting proportion is 75:25 for training and validation. <br />
 
 #### 4.2 Classification Models:
-We mainly perform our experiment using two models which are Convolutional Neural Networks (CNN) and Long short-term memory (LSTM).<br />
+We mainly perform our experiment using two models which are Long short-term memory (LSTM) and Convolutional Neural Networks (CNN).<br />
+- Long short-term memory (LSTM) <br />
+LSTM is another high-performanced model in present. While CNN is good at solving many complex problems, LSTM gives an impressive result on time-series data due to its special architecture. We perform the experiments without data-preprocessing, preprocessed data on 11 channels and preprocessed data on 32 channels. For the results in details can be found in the following part.
+
 - Convolutional Neural Networks (CNN) <br />
 CNN is a deep learning method which is popular widely used to tackle many complex problems including classification. We utilize CNN model to solve our problem and compare our results received from different settings such as the result without preprocessing application, the result using 14 channels and the result using 32 channels   
 
-- Long short-term memory (LSTM) <br />
-LSTM is another high-performanced model in present. While CNN is good at solving many complex problems, LSTM gives an impressive result on time-series data due to its special architecture. We perform the experiments without data-preprocessing, preprocessed data on 11 channels and preprocessed data on 32 channels. For the results in details can be found in the following part.
 
 ----------------------------------------------------------------------------
 ###  5. Experiment Settings and Results:
